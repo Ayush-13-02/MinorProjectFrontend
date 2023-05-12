@@ -64,7 +64,7 @@ const Form = () => {
         event.preventDefault();
         window.scrollTo(0,0);
         try {
-          const response = await fetch('http://127.0.0.1:8000/api/predict/', {
+          const response = await fetch('https://water-quality-vq49.onrender.com/api/predict/', {
             method: 'POST',
             body:  JSON.stringify(modifiedFormData),
             

@@ -28,10 +28,11 @@ const Hero = () => {
             maxWidth={{ sm: 720, md: 1236 }}
             width={1}
             margin='0 auto'
-            paddingTop={10}
+            paddingTop={15}
+            paddingBottom={5}
             backgroundColor={theme.palette.background.default}
         >
-            <Grid container spacing={4} alignItems='center' marginTop='20px'>
+            <Grid container spacing={4} display='flex' justifyContent='center' alignItems='center' marginTop='20px'>
                 <Grid item xs={12} md={6}>
                     <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
                         <Box marginBottom={2}>
@@ -68,6 +69,8 @@ const Hero = () => {
                     md={6}
                 >
                     <Box
+                        marginLeft='4px'
+                        marginRight='4px'
                         sx={{
                             height: { xs: 'auto', md: 1 },
                             '& img': {
@@ -79,7 +82,7 @@ const Hero = () => {
                             }
                         }}
                     >
-                        <img style={{height:393, maxHeight:393}} src={drinking} alt='landing page image'/>
+                        <img style={{maxHeight:393}} src={drinking} alt='landing page image'/>
                         {/* <iframe width="200%" height="393"  src="https://www.youtube.com/embed/6azgSZVqhHI" title="19 02 2023 14 39 57 REC" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                     </Box>
                 </Grid>
